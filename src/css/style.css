@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+a, a:hover{
+   text-decoration: none;
+   color: inherit; 
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header .nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: center;
+}
+.header .nav__list{
+    list-style-type: none;
+    display: flex;
+    gap: 42px;
+}
+.header .nav__list-link:hover{
+    color: #34547A;
+}
+.home{
+    background: #EEEFF1;
+    padding-top: 260px;
+    padding-bottom: 136px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.col_helper{
+    max-width: 450px;
+}
+ 
+.home__title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.home__description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    
+    color: #727272;
+    margin-bottom: 60px;
+}
+
+.home__btn{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    
+    color: #FFFFFF;
+    background: #34547A;
+    padding: 25px  41px;
+    display: inline-block;
+}
+
+.home__btn:hover{
+    background: #0b274a;
+    
+}
+
+.about{
+    padding-top: 119px;
+    padding-bottom: 100px;
+}
+
+.title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 auto;
+    color: #727272;
+    width: 540px;
+}
+
+.projects{
+    background: #34547A;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.projects__list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.projects__list-item{
+    display: flex;
+    
+}
+
+.projects__img{
+    margin-right: 20px;
+}
+
+.projects__number{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.projects__description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+}
+
+.skills__flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills__title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 50px;
+    color: #000000;
+    
+}
+
+.skills__col{
+    padding-top: 160px;
+}
+
+.skills__titles{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #727272;
+    margin-bottom: 20px;
+    
+}
+
+
+.skills__lv{
+    width: 445px;
+    height: 4px;
+    display: block;
+    background: #C4C4C4;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+.skills__lv::before{
+    position: absolute;
+    background: #34547A;
+    content: "";
+    width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+
+.skills__col_2{
+    padding-top: 102px;
+    max-width: 555px;
+    padding-bottom: 101px;
+}
+
+.skills__img{
+    width: 100%;
+}
+
+.work{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #EEEFF1;
+}
+
+.work__video{
+    max-width: 1150px;
+}
+
+.work__mp4{
+    width: 100%;
+    margin-top: 57px;
+    height: 600px;
+    border: none;
+}
+
+
+.portfolio__gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio__images{
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio__img{
+    width: 475.76px;
+    height: 480px;
+    margin-bottom: -4px;
+}
+
+.portfolio__images::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(24, 23, 94, 0.474);
+    content: "";
+    transition: all .4s ease;
+    opacity: 0;
+}
+
+.portfolio__images:hover::before{
+    opacity: 1;
+}
+
+.eyes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.eyes > img{
+    transform: translatey(65px);
+    transition: .4s ease;
+}
+
+.portfolio__images:hover .eyes > img{
+    transform: translateY(0);
+}
+
+
+.partinieres__images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #EEEFF1
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact__input{
+    display: flex;
+    gap: 40px;
+}
+
+
+
+.form__input{
+    margin-top: 65px;
+    width: 250px;
+    height: 50px;
+    border: none;
+    padding-left: 20px;
+    gap: 30px;
+}
+
+
+
+.form__texta{
+    width: 540px;
+    height: 175px;
+    border: none;
+    padding-left: 20px;
+    padding-top: 18px;
+    margin-top: 20px;
+}
+
+.form__submit{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.15em;
+    background: #34547A;
+    color: #FFFFFF;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px; 
+    border: none;
+    margin-top: 53px;
+}
+
+.form__submit:hover{
+    background: #243a55;
+}
+
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #34547A;
+}
+
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.footer__description{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.footer__img{
+    margin-left: 22px;
+}
+
+
+
+
+@media screen {
+    
+}
